@@ -1,0 +1,2 @@
+from sqlmap.sqlmapapi import *
+
