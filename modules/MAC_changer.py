@@ -19,11 +19,9 @@ def get_random_mac_address():
 
 def get_current_mac(interface):
     output = subprocess.check_output(["ifconfig", interface])
-    return re.search("\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", str(output)).group(0)
+    return re.search("\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", str(output)).group(0) # using regular expression to get exact current mac address
 
-# Driver Program
-if __name__ == "__main__":
-    # Change it to required value(in sec)
+def mac_changer_main():
     interface = input("[+] Enter network interface: ")
     mode = input("[+] Press 1 to auto change MAC\n[+] Press 2 to change MAC mannually !\n=> ")
     current_mac = get_current_mac(interface)
