@@ -3,25 +3,23 @@ import subprocess
 import random
 import re
 
-def change_mac(interface, new_mac_address):
+def change_mac(interface, new_mac_address): # This function to change mac on Linux with command
     subprocess.call(["sudo", "ifconfig", interface, b"down"])
     subprocess.call(["sudo", "ifconfig", interface, "hw", "ether", new_mac_address])
     subprocess.call(["sudo", "ifconfig", interface, "up"])
 
-def get_random_mac_address():
+def get_random_mac_address(): # This function to get random mac address
     characters = "0123456789abcdef"
     random_mac_address = "00"
     for i in range(5):
-        random_mac_address += ":" + \
-                              random.choice(characters) \
-                              + random.choice(characters)
+        random_mac_address += ":" + random.choice(characters) + random.choice(characters)
     return random_mac_address
 
-def get_current_mac(interface):
+def get_current_mac(interface):  #  Function get current mac address
     output = subprocess.check_output(["ifconfig", interface])
     return re.search("\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", str(output)).group(0) # using regular expression to get exact current mac address
 
-def mac_changer_main():
+def mac_changer_main(): # Here is main function
     interface = input("[+] Enter network interface: ")
     mode = input("[+] Press 1 to auto change MAC\n[+] Press 2 to change MAC mannually !\n=> ")
     current_mac = get_current_mac(interface)
