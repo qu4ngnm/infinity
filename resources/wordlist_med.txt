@@ -1,4 +1,3 @@
-khoa-hoc
 index
 images
 download

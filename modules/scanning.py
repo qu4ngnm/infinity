@@ -1,14 +1,13 @@
 import nmap
 
 # tek4.vn 125.212.235.148
-
 def scan():
     print("Infomation Gathering")
     host = input("[+] Enter host to scan <IP Type Only>: ")
     portScanner = nmap.PortScanner()
     result =  portScanner.scan(host, arguments="-T4 -sS -O -v")
     with open("../result/nmap_scan.json", "w+") as scanned_data:
-        scanned_data.write(str(result))
+        scanned_data.writelines(str(result))
     # print(result)
     for port in result['scan'][str(host)]["tcp"]:
         print("Port open and Services")
