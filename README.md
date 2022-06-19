@@ -5,6 +5,20 @@ Bộ công cụ này sẽ hỗ trợ các chuyên gia bảo mật trong việc d
 
 Tuy nhiên đây mới chỉ là phiên bản sơ khai, còn nhiều thiếu sót, sẽ được update dần dần
 
+## Một số hình ảnh của bộ công cụ Infinity
+
+![](img/Screenshot%202022-06-19%20235302.png)
+Hình ảnh đầu tiên khi khởi chạy bộ công cụ Infinity
+
+![](img/dir_scan.png)
+
+Đây là sử dụng chức năng directory scan
+
+![](img/xss.png)
+
+Còn đây là hình ảnh khi sử dụng chức năng xss detection
+
+
 ## Các chức năng chính
 
 - Scan host để thu thập thông tin về các service port & các thông tin về os 

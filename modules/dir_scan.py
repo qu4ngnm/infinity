@@ -8,7 +8,7 @@ def req(url): # Request and return response status code
 
 def dir_scan(): # scan if status code is 200 then print it
     host = input("[+] Enter URL to scan: ")
-    wordlist = open("../resources/wordlist_med.txt", 'r')
+    wordlist = open("resources/wordlist_med.txt", 'r')
     for line in wordlist:
         word = line.strip()
         full_url = host + "/" + word
