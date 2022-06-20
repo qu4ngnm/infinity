@@ -15,7 +15,6 @@ banner = """
 First time huh? Enter "help" to get more infomation :) \nHappy Hacking !!"""
 print(Fore.CYAN + banner)
 
-
 def main():
     while True:
         command = input("\nEnter command here -> ")
