@@ -18,6 +18,21 @@ Hình ảnh đầu tiên khi khởi chạy bộ công cụ Infinity
 
 Còn đây là hình ảnh khi sử dụng chức năng xss detection
 
+## Hướng dẫn cài đặt
+
+- Để có thể sử dụng được bộ công cụ này thì đầu tiên ta cần cài đặt các thư viện cần thiết
+
+    `pip install bs4` thư viện beautifulsoup 
+
+    `pip install python-nmap` module nmap trong python
+
+    `pip install requests` thư viện request để gửi các request GET/POST,... lên server bằng python
+
+- Tiếp đó clone chương trình về sử dụng git `git clone https://github.com/quangdaik2362001/infinity`
+
+- Sau khi clone về ta hãy lên quyền `root` và cấp quyền cho thư mục infinity bằng câu lệnh `chmod -R 777 infinity`
+
+- Sau khi đã cấp quyền xong thì ta vào thư mục infinity và chạy file `main.py` bằng câu lệnh `python main.py` (lưu ý là đang trong root terminal nhé)
 
 ## Các chức năng chính
 
