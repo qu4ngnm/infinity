@@ -1,4 +1,4 @@
-# Infinity tool - Bộ công cụ kiểm thử bảo mật (Basic Level)
+# Infinity tool - Bộ công cụ dò quét bảo mật (Basic Level)
 Đây là bộ công cụ kiểm thử bảo mật được phát triển bởi nhóm 8 môn Kỹ Thuật Lập Trình do thầy Thắng phụ trách
 
 Bộ công cụ này sẽ hỗ trợ các chuyên gia bảo mật trong việc dò quét cũng như là thu thập thông tin về mục tiêu tấn công
